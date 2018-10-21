@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "pm2 start lib/server.js --watch --interpreter babel-node",
     "dev-stop": "pm2 stop lib/server.js",
-    "logs": "pm2 logs"
+    "logs": "pm2 logs",
+    "webpack": "webpack -d"
   },
   "babel": {
     "presets": [
@@ -28,15 +29,21 @@
   "devDependencies": {
     "babel-eslint": "^10.0.1",
     "eslint": "^5.7.0",
-    "eslint-plugin-react": "^7.11.1"
+    "eslint-plugin-react": "^7.11.1",
+    "webpack-cli": "^3.1.2"
   },
   "dependencies": {
     "babel-cli": "^6.26.0",
+    "babel-loader": "^7.1.5",
+    "babel-polyfill": "^6.26.0",
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-2": "^6.24.1",
     "ejs": "^2.6.1",
     "express": "^4.16.4",
-    "pm2": "^3.2.2"
+    "pm2": "^3.2.2",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2",
+    "webpack": "^4.22.0"
   }
 }
